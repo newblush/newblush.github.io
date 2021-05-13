@@ -4,11 +4,11 @@
 
 # Site
 title: Lorem Ipsum
-subtitle: What a life
-description: Miao's blog
+subtitle: Miao's blog
+description: What a life
 keywords: blog
-author: Miao
-language: zh-Hans
+author: Miao LN
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -102,6 +102,28 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: git@github.com:newblush/newblush.github.io.git
+  branch: main
 
 auto_spacing: true
+
+math:
+  engine: katex
+  katex:
+    css: https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css
+    js: https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.js
+    config:
+      # KaTeX config
+      throwOnError: false
+      errorColor: "#cc0000" 
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: false
+  total_time: false
+  exclude_codeblock: true
+  awl: 3
+  wpm: 275
+  suffix: "mins."
